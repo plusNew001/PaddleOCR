@@ -12,24 +12,28 @@
         <meta name="author" content="PaddleOCR PMC">
       
       
-        <link rel="canonical" href="https://paddlepaddle.github.io/PaddleOCR/main/version3.x/model_list.html">
+        <link rel="canonical" href="https://paddlepaddle.github.io/PaddleOCR/main/version3.x/deployment/mcp_server.html">
       
       
+        <link rel="prev" href="python_and_cpp_infer.html">
       
       
-      <link rel="icon" href="../version2.x/static/images/logo.jpg">
+        <link rel="next" href="../module_usage/module_overview.html">
+      
+      
+      <link rel="icon" href="../../version2.x/static/images/logo.jpg">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
-        <title>PaddleOCR模型列表（CPU/GPU） - PaddleOCR 文档</title>
+        <title>MCP 服务器 - PaddleOCR 文档</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
   
@@ -116,7 +120,7 @@
     
       <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -142,7 +146,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#paddleocrcpugpu" class="md-skip">
+        <a href="#paddleocr-mcp" class="md-skip">
           跳转至
         </a>
       
@@ -157,12 +161,12 @@
             <div class="md-banner__inner md-grid md-typeset">
               
 You're not viewing the latest version.
-<a href="../..">
+<a href="../../..">
     <strong>Click here to go to latest.</strong>
 </a>
 
             </div>
-            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL(".."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
           </aside>
         
       </div>
@@ -174,9 +178,9 @@ You're not viewing the latest version.
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="../index.html" title="PaddleOCR 文档" class="md-header__button md-logo" aria-label="PaddleOCR 文档" data-md-component="logo">
+    <a href="../../index.html" title="PaddleOCR 文档" class="md-header__button md-logo" aria-label="PaddleOCR 文档" data-md-component="logo">
       
-  <img src="../version2.x/static/images/logo.jpg" alt="logo">
+  <img src="../../version2.x/static/images/logo.jpg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -193,7 +197,7 @@ You're not viewing the latest version.
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              PaddleOCR模型列表（CPU/GPU）
+              MCP 服务器
             
           </span>
         </div>
@@ -240,13 +244,13 @@ You're not viewing the latest version.
       <ul class="md-select__list">
         
           <li class="md-select__item">
-            <a href="model_list.html" hreflang="zh" class="md-select__link">
+            <a href="mcp_server.html" hreflang="zh" class="md-select__link">
               简体中文
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="../en/version3.x/model_list.html" hreflang="en" class="md-select__link">
+            <a href="../../en/version3.x/deployment/mcp_server.html" hreflang="en" class="md-select__link">
               English
             </a>
           </li>
@@ -331,7 +335,7 @@ You're not viewing the latest version.
   
   
     <li class="md-tabs__item">
-      <a href="../index.html" class="md-tabs__link">
+      <a href="../../index.html" class="md-tabs__link">
         
   
   
@@ -350,7 +354,7 @@ You're not viewing the latest version.
   
   
     <li class="md-tabs__item">
-      <a href="../quick_start.html" class="md-tabs__link">
+      <a href="../../quick_start.html" class="md-tabs__link">
         
   
   
@@ -371,7 +375,7 @@ You're not viewing the latest version.
     
     
       <li class="md-tabs__item">
-        <a href="pipeline_usage/OCR.html" class="md-tabs__link">
+        <a href="../pipeline_usage/OCR.html" class="md-tabs__link">
           
   
   
@@ -393,7 +397,7 @@ You're not viewing the latest version.
     
     
       <li class="md-tabs__item">
-        <a href="pipeline_usage/PP-StructureV3.html" class="md-tabs__link">
+        <a href="../pipeline_usage/PP-StructureV3.html" class="md-tabs__link">
           
   
   
@@ -415,7 +419,7 @@ You're not viewing the latest version.
     
     
       <li class="md-tabs__item">
-        <a href="pipeline_usage/PP-ChatOCRv4.html" class="md-tabs__link">
+        <a href="../pipeline_usage/PP-ChatOCRv4.html" class="md-tabs__link">
           
   
   
@@ -433,11 +437,13 @@ You're not viewing the latest version.
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="deployment/high_performance_inference.html" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="high_performance_inference.html" class="md-tabs__link">
           
   
   
@@ -459,7 +465,7 @@ You're not viewing the latest version.
     
     
       <li class="md-tabs__item">
-        <a href="module_usage/module_overview.html" class="md-tabs__link">
+        <a href="../module_usage/module_overview.html" class="md-tabs__link">
           
   
   
@@ -481,7 +487,7 @@ You're not viewing the latest version.
     
     
       <li class="md-tabs__item">
-        <a href="pipeline_usage/pipeline_overview.html" class="md-tabs__link">
+        <a href="../pipeline_usage/pipeline_overview.html" class="md-tabs__link">
           
   
   
@@ -503,7 +509,7 @@ You're not viewing the latest version.
     
     
       <li class="md-tabs__item">
-        <a href="other_devices_support/multi_devices_use_guide.html" class="md-tabs__link">
+        <a href="../other_devices_support/multi_devices_use_guide.html" class="md-tabs__link">
           
   
   
@@ -525,7 +531,7 @@ You're not viewing the latest version.
     
     
       <li class="md-tabs__item">
-        <a href="paddleocr_and_paddlex.html" class="md-tabs__link">
+        <a href="../paddleocr_and_paddlex.html" class="md-tabs__link">
           
   
   
@@ -547,7 +553,7 @@ You're not viewing the latest version.
     
     
       <li class="md-tabs__item">
-        <a href="paddlex/overview.html" class="md-tabs__link">
+        <a href="../paddlex/overview.html" class="md-tabs__link">
           
   
   
@@ -569,7 +575,7 @@ You're not viewing the latest version.
     
     
       <li class="md-tabs__item">
-        <a href="../data_anno_synth/overview.html" class="md-tabs__link">
+        <a href="../../data_anno_synth/overview.html" class="md-tabs__link">
           
   
   
@@ -589,7 +595,7 @@ You're not viewing the latest version.
   
   
     <li class="md-tabs__item">
-      <a href="../update/update.html" class="md-tabs__link">
+      <a href="../../update/update.html" class="md-tabs__link">
         
   
   
@@ -610,7 +616,7 @@ You're not viewing the latest version.
     
     
       <li class="md-tabs__item">
-        <a href="../version2.x/legacy/index.html" class="md-tabs__link">
+        <a href="../../version2.x/legacy/index.html" class="md-tabs__link">
           
   
   
@@ -630,7 +636,7 @@ You're not viewing the latest version.
   
   
     <li class="md-tabs__item">
-      <a href="../FAQ.html" class="md-tabs__link">
+      <a href="../../FAQ.html" class="md-tabs__link">
         
   
   
@@ -651,7 +657,7 @@ You're not viewing the latest version.
     
     
       <li class="md-tabs__item">
-        <a href="../community/community_contribution.html" class="md-tabs__link">
+        <a href="../../community/community_contribution.html" class="md-tabs__link">
           
   
   
@@ -693,9 +699,9 @@ You're not viewing the latest version.
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../index.html" title="PaddleOCR 文档" class="md-nav__button md-logo" aria-label="PaddleOCR 文档" data-md-component="logo">
+    <a href="../../index.html" title="PaddleOCR 文档" class="md-nav__button md-logo" aria-label="PaddleOCR 文档" data-md-component="logo">
       
-  <img src="../version2.x/static/images/logo.jpg" alt="logo">
+  <img src="../../version2.x/static/images/logo.jpg" alt="logo">
 
     </a>
     PaddleOCR 文档
@@ -722,7 +728,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../index.html" class="md-nav__link">
+      <a href="../../index.html" class="md-nav__link">
         
   
   
@@ -744,7 +750,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../quick_start.html" class="md-nav__link">
+      <a href="../../quick_start.html" class="md-nav__link">
         
   
   
@@ -815,7 +821,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="pipeline_usage/OCR.html" class="md-nav__link">
+      <a href="../pipeline_usage/OCR.html" class="md-nav__link">
         
   
   
@@ -838,7 +844,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="algorithm/PP-OCRv5/PP-OCRv5.html" class="md-nav__link">
+      <a href="../algorithm/PP-OCRv5/PP-OCRv5.html" class="md-nav__link">
         
   
   
@@ -917,7 +923,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="pipeline_usage/PP-StructureV3.html" class="md-nav__link">
+      <a href="../pipeline_usage/PP-StructureV3.html" class="md-nav__link">
         
   
   
@@ -940,7 +946,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="algorithm/PP-StructureV3/PP-StructureV3.html" class="md-nav__link">
+      <a href="../algorithm/PP-StructureV3/PP-StructureV3.html" class="md-nav__link">
         
   
   
@@ -1019,7 +1025,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="pipeline_usage/PP-ChatOCRv4.html" class="md-nav__link">
+      <a href="../pipeline_usage/PP-ChatOCRv4.html" class="md-nav__link">
         
   
   
@@ -1042,7 +1048,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="algorithm/PP-ChatOCRv4/PP-ChatOCRv4.html" class="md-nav__link">
+      <a href="../algorithm/PP-ChatOCRv4/PP-ChatOCRv4.html" class="md-nav__link">
         
   
   
@@ -1069,8 +1075,10 @@ You're not viewing the latest version.
       
   
   
+    
   
   
+  
     
     
       
@@ -1090,19 +1098,20 @@ You're not viewing the latest version.
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
-        
-          
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
             
   
   
@@ -1115,7 +1124,7 @@ You're not viewing the latest version.
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             推理部署
@@ -1129,7 +1138,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="deployment/high_performance_inference.html" class="md-nav__link">
+      <a href="high_performance_inference.html" class="md-nav__link">
         
   
   
@@ -1152,7 +1161,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="deployment/obtaining_onnx_models.html" class="md-nav__link">
+      <a href="obtaining_onnx_models.html" class="md-nav__link">
         
   
   
@@ -1175,7 +1184,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="deployment/on_device_deployment.html" class="md-nav__link">
+      <a href="on_device_deployment.html" class="md-nav__link">
         
   
   
@@ -1198,7 +1207,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="deployment/serving.html" class="md-nav__link">
+      <a href="serving.html" class="md-nav__link">
         
   
   
@@ -1221,7 +1230,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="deployment/python_and_cpp_infer.html" class="md-nav__link">
+      <a href="python_and_cpp_infer.html" class="md-nav__link">
         
   
   
@@ -1241,10 +1250,32 @@ You're not viewing the latest version.
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="deployment/mcp_server.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    MCP 服务器
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="mcp_server.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1255,6 +1286,179 @@ You're not viewing the latest version.
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      主要功能
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      目录
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 安装
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 快速开始
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 配置说明
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 配置说明">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-mcp-host" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1. MCP Host 配置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2. 工作模式详解
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2. 工作模式详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aistudio" class="md-nav__link">
+    <span class="md-ellipsis">
+      模式一：托管在星河社区的服务 (aistudio)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      模式二：本地 Python 库 (local)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#self_hosted" class="md-nav__link">
+    <span class="md-ellipsis">
+      模式三：自托管服务 (self_hosted)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 参数参考
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 配置示例
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 配置示例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 星河社区服务配置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 本地 Python 库配置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3 自托管服务配置
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1345,7 +1549,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="module_usage/module_overview.html" class="md-nav__link">
+      <a href="../module_usage/module_overview.html" class="md-nav__link">
         
   
   
@@ -1368,7 +1572,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="module_usage/doc_img_orientation_classification.html" class="md-nav__link">
+      <a href="../module_usage/doc_img_orientation_classification.html" class="md-nav__link">
         
   
   
@@ -1391,7 +1595,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="module_usage/doc_vlm.html" class="md-nav__link">
+      <a href="../module_usage/doc_vlm.html" class="md-nav__link">
         
   
   
@@ -1414,7 +1618,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="module_usage/formula_recognition.html" class="md-nav__link">
+      <a href="../module_usage/formula_recognition.html" class="md-nav__link">
         
   
   
@@ -1437,7 +1641,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="module_usage/layout_detection.html" class="md-nav__link">
+      <a href="../module_usage/layout_detection.html" class="md-nav__link">
         
   
   
@@ -1460,7 +1664,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="module_usage/seal_text_detection.html" class="md-nav__link">
+      <a href="../module_usage/seal_text_detection.html" class="md-nav__link">
         
   
   
@@ -1483,7 +1687,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="module_usage/table_cells_detection.html" class="md-nav__link">
+      <a href="../module_usage/table_cells_detection.html" class="md-nav__link">
         
   
   
@@ -1506,7 +1710,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="module_usage/table_classification.html" class="md-nav__link">
+      <a href="../module_usage/table_classification.html" class="md-nav__link">
         
   
   
@@ -1529,7 +1733,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="module_usage/table_structure_recognition.html" class="md-nav__link">
+      <a href="../module_usage/table_structure_recognition.html" class="md-nav__link">
         
   
   
@@ -1552,7 +1756,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="module_usage/text_detection.html" class="md-nav__link">
+      <a href="../module_usage/text_detection.html" class="md-nav__link">
         
   
   
@@ -1575,7 +1779,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="module_usage/text_image_unwarping.html" class="md-nav__link">
+      <a href="../module_usage/text_image_unwarping.html" class="md-nav__link">
         
   
   
@@ -1598,7 +1802,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="module_usage/textline_orientation_classification.html" class="md-nav__link">
+      <a href="../module_usage/textline_orientation_classification.html" class="md-nav__link">
         
   
   
@@ -1621,7 +1825,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="module_usage/text_recognition.html" class="md-nav__link">
+      <a href="../module_usage/text_recognition.html" class="md-nav__link">
         
   
   
@@ -1708,7 +1912,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="pipeline_usage/pipeline_overview.html" class="md-nav__link">
+      <a href="../pipeline_usage/pipeline_overview.html" class="md-nav__link">
         
   
   
@@ -1731,7 +1935,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="pipeline_usage/formula_recognition.html" class="md-nav__link">
+      <a href="../pipeline_usage/formula_recognition.html" class="md-nav__link">
         
   
   
@@ -1754,7 +1958,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="pipeline_usage/doc_preprocessor.html" class="md-nav__link">
+      <a href="../pipeline_usage/doc_preprocessor.html" class="md-nav__link">
         
   
   
@@ -1777,7 +1981,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="pipeline_usage/doc_understanding.html" class="md-nav__link">
+      <a href="../pipeline_usage/doc_understanding.html" class="md-nav__link">
         
   
   
@@ -1800,7 +2004,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="pipeline_usage/seal_recognition.html" class="md-nav__link">
+      <a href="../pipeline_usage/seal_recognition.html" class="md-nav__link">
         
   
   
@@ -1823,7 +2027,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="pipeline_usage/table_recognition_v2.html" class="md-nav__link">
+      <a href="../pipeline_usage/table_recognition_v2.html" class="md-nav__link">
         
   
   
@@ -1904,7 +2108,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="other_devices_support/multi_devices_use_guide.html" class="md-nav__link">
+      <a href="../other_devices_support/multi_devices_use_guide.html" class="md-nav__link">
         
   
   
@@ -1927,7 +2131,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="other_devices_support/paddlepaddle_install_NPU.html" class="md-nav__link">
+      <a href="../other_devices_support/paddlepaddle_install_NPU.html" class="md-nav__link">
         
   
   
@@ -1950,7 +2154,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="other_devices_support/paddlepaddle_install_XPU.html" class="md-nav__link">
+      <a href="../other_devices_support/paddlepaddle_install_XPU.html" class="md-nav__link">
         
   
   
@@ -2033,7 +2237,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="paddleocr_and_paddlex.html" class="md-nav__link">
+      <a href="../paddleocr_and_paddlex.html" class="md-nav__link">
         
   
   
@@ -2056,7 +2260,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../update/upgrade_notes.html" class="md-nav__link">
+      <a href="../../update/upgrade_notes.html" class="md-nav__link">
         
   
   
@@ -2079,7 +2283,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="logging.html" class="md-nav__link">
+      <a href="../logging.html" class="md-nav__link">
         
   
   
@@ -2102,7 +2306,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="pipeline_usage/instructions/parallel_inference.html" class="md-nav__link">
+      <a href="../pipeline_usage/instructions/parallel_inference.html" class="md-nav__link">
         
   
   
@@ -2181,7 +2385,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="paddlex/overview.html" class="md-nav__link">
+      <a href="../paddlex/overview.html" class="md-nav__link">
         
   
   
@@ -2204,7 +2408,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="paddlex/quick_start.html" class="md-nav__link">
+      <a href="../paddlex/quick_start.html" class="md-nav__link">
         
   
   
@@ -2297,7 +2501,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../data_anno_synth/overview.html" class="md-nav__link">
+      <a href="../../data_anno_synth/overview.html" class="md-nav__link">
         
   
   
@@ -2320,7 +2524,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../data_anno_synth/data_annotation.html" class="md-nav__link">
+      <a href="../../data_anno_synth/data_annotation.html" class="md-nav__link">
         
   
   
@@ -2343,7 +2547,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../data_anno_synth/data_synthesis.html" class="md-nav__link">
+      <a href="../../data_anno_synth/data_synthesis.html" class="md-nav__link">
         
   
   
@@ -2366,7 +2570,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../datasets/datasets.html" class="md-nav__link">
+      <a href="../../datasets/datasets.html" class="md-nav__link">
         
   
   
@@ -2389,7 +2593,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../datasets/handwritten_datasets.html" class="md-nav__link">
+      <a href="../../datasets/handwritten_datasets.html" class="md-nav__link">
         
   
   
@@ -2412,7 +2616,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../datasets/vertical_and_multilingual_datasets.html" class="md-nav__link">
+      <a href="../../datasets/vertical_and_multilingual_datasets.html" class="md-nav__link">
         
   
   
@@ -2435,7 +2639,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../datasets/layout_datasets.html" class="md-nav__link">
+      <a href="../../datasets/layout_datasets.html" class="md-nav__link">
         
   
   
@@ -2458,7 +2662,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../datasets/table_datasets.html" class="md-nav__link">
+      <a href="../../datasets/table_datasets.html" class="md-nav__link">
         
   
   
@@ -2481,7 +2685,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../datasets/kie_datasets.html" class="md-nav__link">
+      <a href="../../datasets/kie_datasets.html" class="md-nav__link">
         
   
   
@@ -2511,7 +2715,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../update/update.html" class="md-nav__link">
+      <a href="../../update/update.html" class="md-nav__link">
         
   
   
@@ -2576,7 +2780,7 @@ You're not viewing the latest version.
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../version2.x/legacy/index.html" class="md-nav__link ">
+            <a href="../../version2.x/legacy/index.html" class="md-nav__link ">
               
   
   
@@ -2611,7 +2815,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../version2.x/legacy/model_list_2.x.html" class="md-nav__link">
+      <a href="../../version2.x/legacy/model_list_2.x.html" class="md-nav__link">
         
   
   
@@ -2634,7 +2838,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../version2.x/legacy/python_infer.html" class="md-nav__link">
+      <a href="../../version2.x/legacy/python_infer.html" class="md-nav__link">
         
   
   
@@ -2657,7 +2861,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../version2.x/legacy/cpp_infer.html" class="md-nav__link">
+      <a href="../../version2.x/legacy/cpp_infer.html" class="md-nav__link">
         
   
   
@@ -2680,7 +2884,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../version2.x/legacy/windows_vs2019_build.html" class="md-nav__link">
+      <a href="../../version2.x/legacy/windows_vs2019_build.html" class="md-nav__link">
         
   
   
@@ -2703,7 +2907,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../version2.x/legacy/paddle_server.html" class="md-nav__link">
+      <a href="../../version2.x/legacy/paddle_server.html" class="md-nav__link">
         
   
   
@@ -2726,7 +2930,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../version2.x/legacy/android_demo.html" class="md-nav__link">
+      <a href="../../version2.x/legacy/android_demo.html" class="md-nav__link">
         
   
   
@@ -2749,7 +2953,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../version2.x/legacy/lite.html" class="md-nav__link">
+      <a href="../../version2.x/legacy/lite.html" class="md-nav__link">
         
   
   
@@ -2772,7 +2976,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../version2.x/legacy/paddle2onnx.html" class="md-nav__link">
+      <a href="../../version2.x/legacy/paddle2onnx.html" class="md-nav__link">
         
   
   
@@ -2795,7 +2999,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../version2.x/legacy/paddle_cloud.html" class="md-nav__link">
+      <a href="../../version2.x/legacy/paddle_cloud.html" class="md-nav__link">
         
   
   
@@ -2818,7 +3022,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../version2.x/legacy/benchmark.html" class="md-nav__link">
+      <a href="../../version2.x/legacy/benchmark.html" class="md-nav__link">
         
   
   
@@ -2848,7 +3052,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../FAQ.html" class="md-nav__link">
+      <a href="../../FAQ.html" class="md-nav__link">
         
   
   
@@ -2919,7 +3123,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../community/community_contribution.html" class="md-nav__link">
+      <a href="../../community/community_contribution.html" class="md-nav__link">
         
   
   
@@ -2942,7 +3146,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../community/code_and_doc.html" class="md-nav__link">
+      <a href="../../community/code_and_doc.html" class="md-nav__link">
         
   
   
@@ -2994,7 +3198,7 @@ You're not viewing the latest version.
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      文本检测模块
+      主要功能
     </span>
   </a>
   
@@ -3003,99 +3207,144 @@ You're not viewing the latest version.
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      印章文本检测模块
+      目录
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
-      文本识别模块
+      1. 安装
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
-      公式识别模块
+      2. 快速开始
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
-      表格结构识别模块
+      3. 配置说明
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 配置说明">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-mcp-host" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1. MCP Host 配置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2. 工作模式详解
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2. 工作模式详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aistudio" class="md-nav__link">
+    <span class="md-ellipsis">
+      模式一：托管在星河社区的服务 (aistudio)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      模式二：本地 Python 库 (local)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#self_hosted" class="md-nav__link">
+    <span class="md-ellipsis">
+      模式三：自托管服务 (self_hosted)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 参数参考
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#5" class="md-nav__link">
     <span class="md-ellipsis">
-      表格单元格检测模块
+      5. 配置示例
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 配置示例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 星河社区服务配置
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#52-python" class="md-nav__link">
     <span class="md-ellipsis">
-      表格分类模块
+      5.2 本地 Python 库配置
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#53" class="md-nav__link">
     <span class="md-ellipsis">
-      文本图像矫正模块
+      5.3 自托管服务配置
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    <span class="md-ellipsis">
-      版面区域检测模块
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
-    <span class="md-ellipsis">
-      文档图像方向分类模块
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
-    <span class="md-ellipsis">
-      文本行方向分类模块
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
-    <span class="md-ellipsis">
-      文档类视觉语言模型模块
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -3115,7 +3364,7 @@ You're not viewing the latest version.
 
 
   
-    <a href="https://github.com/PaddlePaddle/PaddleOCR/edit/main/docs/version3.x/model_list.md" title="编辑此页" class="md-content__button md-icon">
+    <a href="https://github.com/PaddlePaddle/PaddleOCR/edit/main/docs/version3.x/deployment/mcp_server.md" title="编辑此页" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75z"/></svg>
     </a>
@@ -3124,922 +3373,285 @@ You're not viewing the latest version.
     
       
     
-    <a href="https://github.com/PaddlePaddle/PaddleOCR/raw/main/docs/version3.x/model_list.md" title="查看本页的源代码" class="md-content__button md-icon">
+    <a href="https://github.com/PaddlePaddle/PaddleOCR/raw/main/docs/version3.x/deployment/mcp_server.md" title="查看本页的源代码" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"/></svg>
     </a>
   
 
 
-<h1 id="paddleocrcpugpu">PaddleOCR模型列表（CPU/GPU）<a class="headerlink" href="#paddleocrcpugpu" title="Permanent link">&para;</a></h1>
-<p>PaddleOCR 内置了多条产线，每条产线都包含了若干模块，每个模块包含若干模型，具体使用哪些模型，您可以根据下边的 benchmark 数据来选择。如您更考虑模型精度，请选择精度较高的模型，如您更考虑模型推理速度，请选择推理速度较快的模型，如您更考虑模型存储大小，请选择存储大小较小的模型。</p>
-<h2 id="_1"><a href="module_usage/text_detection.html">文本检测模块</a><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h1 id="paddleocr-mcp">PaddleOCR MCP 服务器<a class="headerlink" href="#paddleocr-mcp" title="Permanent link">&para;</a></h1>
+<p><a href="https://github.com/PaddlePaddle/PaddleOCR"><img alt="PaddleOCR" src="https://img.shields.io/badge/OCR-PaddleOCR-orange" /></a>
+<a href="https://gofastmcp.com"><img alt="FastMCP" src="https://img.shields.io/badge/Built%20with-FastMCP%20v2-blue" /></a></p>
+<p>本项目提供一个轻量级的 <a href="https://modelcontextprotocol.io/introduction">Model Context Protocol（MCP）</a> 服务器，旨在将 PaddleOCR 的强大能力集成到兼容的 MCP Host 中。</p>
+<h3 id="_1">主要功能<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>当前支持的工具</strong><ul>
+<li><strong>OCR</strong>：对图像和 PDF 文件进行文本检测与识别。</li>
+<li><strong>PP-StructureV3</strong>：从图像或 PDF 文件中识别和提取文本块、标题、段落、图片、表格以及其他版面元素，将输入转换为 Markdown 文档。</li>
+</ul>
+</li>
+<li><strong>支持运行在如下工作模式</strong><ul>
+<li><strong>本地 Python 库</strong>：在本机直接运行 PaddleOCR 产线。</li>
+<li><strong>星河社区服务</strong>：调用飞桨星河社区提供的云端服务。</li>
+<li><strong>自托管服务</strong>：调用用户自行部署的 PaddleOCR 服务。</li>
+</ul>
+</li>
+</ul>
+<h3 id="_2">目录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="#1-安装">1. 安装</a></li>
+<li><a href="#2-快速开始">2. 快速开始</a></li>
+<li><a href="#3-配置说明">3. 配置说明</a></li>
+<li><a href="#31-mcp-host-配置">3.1. MCP Host 配置</a></li>
+<li><a href="#32-工作模式详解">3.2. 工作模式详解</a><ul>
+<li><a href="#模式一托管在星河社区的服务-aistudio">模式一：托管在星河社区的服务</a></li>
+<li><a href="#模式二本地-python-库-local">模式二：本地 Python 库</a></li>
+<li><a href="#模式三自托管服务-self_hosted">模式三：自托管服务</a></li>
+</ul>
+</li>
+<li><a href="#4-参数参考">4. 参数参考</a></li>
+<li><a href="#5-配置示例">5. 配置示例</a></li>
+<li><a href="#51-ai-studio-星河社区服务配置">5.1 星河社区服务配置</a></li>
+<li><a href="#52-本地-python-库配置">5.2 本地 Python 库配置</a></li>
+<li><a href="#53-自托管服务配置">5.3 自托管服务配置</a></li>
+</ul>
+<h2 id="1">1. 安装<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># 安装 wheel 包</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>pip<span class="w"> </span>install<span class="w"> </span>https://paddle-model-ecology.bj.bcebos.com/paddlex/PaddleX3.0/mcp/paddleocr_mcp/releases/v0.1.0/paddleocr_mcp-0.1.0-py3-none-any.whl
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># 或者，从项目源码安装</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c1"># git clone https://github.com/PaddlePaddle/PaddleOCR.git</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="c1"># pip install -e mcp_server</span>
+</span></code></pre></div>
+<p>部分 <a href="#32-工作模式详解">工作模式</a> 可能需要安装额外依赖。</p>
+<h2 id="2">2. 快速开始<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<p>本节将以 <strong>Claude Desktop</strong> 作为 MCP Host，并以 <strong>星河社区服务</strong> 工作模式为例，引导您完成快速配置。此模式无需在本地安装复杂的依赖，推荐新用户使用。请参考 <a href="#3-配置说明">3. 配置说明</a> 了解其他工作模式的操作流程以及更多配置项。</p>
+<ol>
+<li>
+<p><strong>准备星河社区服务</strong></p>
+<ul>
+<li>访问 <a href="https://aistudio.baidu.com/pipeline/mine">飞桨星河社区</a> 并登录。</li>
+<li>在左侧"更多内容"下的 "PaddleX 产线" 部分，[创建产线] - [OCR] - [通用 OCR] - [直接部署] - [文本识别模块，选择 PP-OCRv5_server_rec] - [开始部署]。</li>
+<li>部署成功后，获取您的 <strong>服务基础 URL</strong>（示例：<code>https://xxxxxx.aistudio-hub.baidu.com</code>）。</li>
+<li>在 <a href="https://aistudio.baidu.com/index/accessToken">此页面</a> 获取您的 <strong>访问令牌</strong>。</li>
+</ul>
+</li>
+<li>
+<p><strong>定位 MCP 配置文件</strong> - 详情请参考 <a href="https://modelcontextprotocol.io/quickstart/user">MCP 官方文档</a>。</p>
+<ul>
+<li><strong>macOS</strong>：<code>~/Library/Application Support/Claude/claude_desktop_config.json</code></li>
+<li><strong>Windows</strong>：<code>%APPDATA%\Claude\claude_desktop_config.json</code></li>
+<li><strong>Linux</strong>：<code>~/.config/Claude/claude_desktop_config.json</code></li>
+</ul>
+</li>
+<li>
+<p><strong>添加 MCP 服务器配置</strong>
+    打开 <code>claude_desktop_config.json</code> 文件，参考 <a href="#51-星河社区服务配置">5.1 星河社区服务配置</a> 调整配置，填充到 <code>claude_desktop_config.json</code> 中。</p>
+<p><strong>注意</strong>：
+- 请勿泄漏您的 <strong>访问令牌</strong>。
+- 如果 <code>paddleocr_mcp</code> 无法在系统 <code>PATH</code> 中找到，请将 <code>command</code> 设置为可执行文件的绝对路径。</p>
+</li>
+<li>
+<p><strong>重启 MCP Host</strong>
+    重启 Claude Desktop。新的 <code>paddleocr-ocr</code> 工具现在应该可以在应用中使用了。</p>
+</li>
+</ol>
+<h2 id="3">3. 配置说明<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<h3 id="31-mcp-host">3.1. MCP Host 配置<a class="headerlink" href="#31-mcp-host" title="Permanent link">&para;</a></h3>
+<p>在 Host 的配置文件中（如 <code>claude_desktop_config.json</code>），您需要定义工具服务器的启动方式。关键字段如下：
+- <code>command</code>：<code>paddleocr_mcp</code>（如果可执行文件可在 <code>PATH</code> 中找到）或绝对路径。
+- <code>args</code>：可配置命令行参数，如 <code>["--verbose"]</code>。详见 <a href="#4-参数参考">4. 参数参考</a>。
+- <code>env</code>：可配置环境变量。详见 <a href="#4-参数参考">4. 参数参考</a>。</p>
+<h3 id="32">3.2. 工作模式详解<a class="headerlink" href="#32" title="Permanent link">&para;</a></h3>
+<p>您可以根据需求配置 MCP 服务器，使其运行在不同的工作模式。</p>
+<h4 id="aistudio">模式一：托管在星河社区的服务 (<code>aistudio</code>)<a class="headerlink" href="#aistudio" title="Permanent link">&para;</a></h4>
+<p>此模式调用 <a href="https://aistudio.baidu.com/pipeline/mine">飞桨星河社区</a> 的服务。</p>
+<ul>
+<li><strong>适用场景</strong>：适合快速体验功能、快速验证方案等，也适用于零代码开发场景。</li>
+<li><strong>操作流程</strong>：请参考 <a href="#2-快速开始">2. 快速开始</a>。</li>
+<li>除了使用平台预设的模型方案，您也可以在平台上自行训练并部署自定义模型。</li>
+</ul>
+<h4 id="python-local">模式二：本地 Python 库 (<code>local</code>)<a class="headerlink" href="#python-local" title="Permanent link">&para;</a></h4>
+<p>此模式直接在本地计算机上运行模型，对本地环境与计算机性能有一定要求。</p>
+<ul>
+<li><strong>适用场景</strong>：需要离线使用、对数据隐私有严格要求的场景。</li>
+<li><strong>操作流程</strong>：<ol>
+<li>参考 <a href="../installation.html">PaddleOCR 安装文档</a> 安装 <em>飞桨框架</em> 和 <em>PaddleOCR</em>。为避免依赖冲突，<strong>强烈建议在独立的虚拟环境中安装</strong>。</li>
+<li>参考 <a href="#52-本地-python-库配置">配置示例</a> 更改 <code>claude_desktop_config.json</code> 文件内容。</li>
+</ol>
+</li>
+</ul>
+<h4 id="self_hosted">模式三：自托管服务 (<code>self_hosted</code>)<a class="headerlink" href="#self_hosted" title="Permanent link">&para;</a></h4>
+<p>此模式调用您自行部署的 PaddleOCR 推理服务。</p>
+<ul>
+<li><strong>适用场景</strong>：具备服务化部署优势及高度灵活性，较适合生产环境，尤其是适用于需要自定义服务配置的场景。</li>
+<li><strong>操作流程</strong>：<ol>
+<li>参考 <a href="../installation.html">PaddleOCR 安装文档</a> 安装 <em>飞桨框架</em> 和 <em>PaddleOCR</em>。</li>
+<li>参考 <a href="serving.html">PaddleOCR 服务化部署文档</a> 运行服务器。</li>
+<li>参考 <a href="#53-自托管服务配置">配置示例</a> 更改 <code>claude_desktop_config.json</code> 文件内容。</li>
+<li>将您的服务地址填入 <code>PADDLEOCR_MCP_SERVER_URL</code> (例如：<code>"http://127.0.0.1:8000"</code>)。</li>
+</ol>
+</li>
+</ul>
+<h2 id="4">4. 参数参考<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<p>您可以通过环境变量或命令行参数来控制服务器的行为。</p>
 <table>
 <thead>
 <tr>
-<th>模型</th>
-<th>检测Hmean（%）</th>
-<th>GPU推理耗时（ms）<br/>[常规模式 / 高性能模式]</th>
-<th>CPU推理耗时（ms）<br/>[常规模式 / 高性能模式]</th>
-<th>模型存储大小（M)</th>
-<th>yaml 文件</th>
-<th>模型下载链接</th>
+<th style="text-align: left;">环境变量</th>
+<th style="text-align: left;">命令行参数</th>
+<th style="text-align: left;">类型</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">可选值</th>
+<th style="text-align: left;">默认值</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>PP-OCRv5_server_det</td>
-<td>-</td>
-<td>- / -</td>
-<td>- / -</td>
-<td>101</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/text_detection/PP-OCRv5_server_det.yaml">PP-OCRv5_server_det.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-OCRv5_server_det_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/PP-OCRv5_server_det_pretrained.pdparams">训练模型</a></td>
+<td style="text-align: left;"><code>PADDLEOCR_MCP_PIPELINE</code></td>
+<td style="text-align: left;"><code>--pipeline</code></td>
+<td style="text-align: left;"><code>str</code></td>
+<td style="text-align: left;">要运行的产线</td>
+<td style="text-align: left;"><code>"OCR"</code>, <code>"PP-StructureV3"</code></td>
+<td style="text-align: left;"><code>"OCR"</code></td>
 </tr>
 <tr>
-<td>PP-OCRv5_mobile_det</td>
-<td>-</td>
-<td>- / -</td>
-<td>- / -</td>
-<td>20</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/text_detection/PP-OCRv5_mobile_det.yaml">PP-OCRv5_mobile_det.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-OCRv5_mobile_det_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/PP-OCRv5_mobile_det_pretrained.pdparams">训练模型</a></td>
+<td style="text-align: left;"><code>PADDLEOCR_MCP_PPOCR_SOURCE</code></td>
+<td style="text-align: left;"><code>--ppocr_source</code></td>
+<td style="text-align: left;"><code>str</code></td>
+<td style="text-align: left;">PaddleOCR 能力来源</td>
+<td style="text-align: left;"><code>"local"</code>, <code>"aistudio"</code>, <code>"self_hosted"</code></td>
+<td style="text-align: left;"><code>"local"</code></td>
 </tr>
 <tr>
-<td>PP-OCRv4_server_det</td>
-<td>82.56</td>
-<td>83.34 / 80.91</td>
-<td>442.58 / 442.58</td>
-<td>109</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/text_detection/PP-OCRv4_server_det.yaml">PP-OCRv4_server_det.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-OCRv4_server_det_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/PP-OCRv4_server_det_pretrained.pdparams">训练模型</a></td>
+<td style="text-align: left;"><code>PADDLEOCR_MCP_SERVER_URL</code></td>
+<td style="text-align: left;"><code>--server_url</code></td>
+<td style="text-align: left;"><code>str</code></td>
+<td style="text-align: left;">底层服务基础 URL（<code>aistudio</code> 或 <code>self_hosted</code> 模式下必需）</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><code>None</code></td>
 </tr>
 <tr>
-<td>PP-OCRv4_mobile_det</td>
-<td>77.35</td>
-<td>8.79 / 3.13</td>
-<td>51.00 / 28.58</td>
-<td>4.7</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/text_detection/PP-OCRv4_mobile_det.yaml">PP-OCRv4_mobile_det.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-OCRv4_mobile_det_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/PP-OCRv4_mobile_det_pretrained.pdparams">训练模型</a></td>
+<td style="text-align: left;"><code>PADDLEOCR_MCP_AISTUDIO_ACCESS_TOKEN</code></td>
+<td style="text-align: left;"><code>--aistudio_access_token</code></td>
+<td style="text-align: left;"><code>str</code></td>
+<td style="text-align: left;">AI Studio 认证令牌（<code>aistudio</code> 模式下必需）</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><code>None</code></td>
 </tr>
 <tr>
-<td>PP-OCRv3_mobile_det</td>
-<td>78.68</td>
-<td>8.44 / 2.91</td>
-<td>27.87 / 27.87</td>
-<td>2.1</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/text_detection/PP-OCRv3_mobile_det.yaml">PP-OCRv3_mobile_det.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-OCRv3_mobile_det_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/PP-OCRv3_mobile_det_pretrained.pdparams">训练模型</a></td>
+<td style="text-align: left;"><code>PADDLEOCR_MCP_TIMEOUT</code></td>
+<td style="text-align: left;"><code>--timeout</code></td>
+<td style="text-align: left;"><code>int</code></td>
+<td style="text-align: left;">底层服务请求的超时时间（秒）</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><code>30</code></td>
 </tr>
 <tr>
-<td>PP-OCRv3_server_det</td>
-<td>80.11</td>
-<td>65.41 / 13.67</td>
-<td>305.07 / 305.07</td>
-<td>102.1</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/text_detection/PP-OCRv3_server_det.yaml">PP-OCRv3_server_det.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-OCRv3_server_det_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/PP-OCRv3_server_det_pretrained.pdparams">训练模型</a></td>
+<td style="text-align: left;"><code>PADDLEOCR_MCP_DEVICE</code></td>
+<td style="text-align: left;"><code>--device</code></td>
+<td style="text-align: left;"><code>str</code></td>
+<td style="text-align: left;">指定运行推理的设备（仅在 <code>local</code> 模式下生效）</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><code>None</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>PADDLEOCR_MCP_PIPELINE_CONFIG</code></td>
+<td style="text-align: left;"><code>--pipeline_config</code></td>
+<td style="text-align: left;"><code>str</code></td>
+<td style="text-align: left;">PaddleOCR 产线配置文件路径（仅在 <code>local</code> 模式下生效）</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><code>None</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><code>--http</code></td>
+<td style="text-align: left;"><code>bool</code></td>
+<td style="text-align: left;">使用 HTTP 传输而非 stdio（适用于远程部署和多客户端）</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><code>False</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><code>--host</code></td>
+<td style="text-align: left;"><code>str</code></td>
+<td style="text-align: left;">HTTP 模式的主机地址</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><code>"127.0.0.1"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><code>--port</code></td>
+<td style="text-align: left;"><code>int</code></td>
+<td style="text-align: left;">HTTP 模式的端口</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><code>8000</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><code>--verbose</code></td>
+<td style="text-align: left;"><code>bool</code></td>
+<td style="text-align: left;">启用详细日志记录，便于调试</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><code>False</code></td>
 </tr>
 </tbody>
 </table>
-<p><b>注：以上精度指标的评估集是 PaddleOCR 自建的中英文数据集，覆盖街景、网图、文档、手写多个场景，其中文本识别包含 593 张图片。</b></p>
-<h2 id="_2"><a href="module_usage/seal_text_detection.html">印章文本检测模块</a><a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>模型名称</th>
-<th>检测Hmean（%）</th>
-<th>GPU推理耗时（ms）<br/>[常规模式 / 高性能模式]</th>
-<th>CPU推理耗时（ms）<br/>[常规模式 / 高性能模式]</th>
-<th>模型存储大小</th>
-<th>yaml 文件</th>
-<th>模型下载链接</th></tr>
-</thead>
-<tbody>
-<tr>
-<td>PP-OCRv4_mobile_seal_det</td>
-<td>96.47</td>
-<td>7.82 / 3.09</td>
-<td>48.28 / 23.97</td>
-<td>4.7M</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/seal_text_detection/PP-OCRv4_mobile_seal_det.yaml">PP-OCRv4_mobile_seal_det.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-OCRv4_mobile_seal_det_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/PP-OCRv4_mobile_seal_det_pretrained.pdparams">训练模型</a></td></tr>
-<tr>
-<td>PP-OCRv4_server_seal_det</td>
-<td>98.21</td>
-<td>74.75 / 67.72</td>
-<td>382.55 / 382.55</td>
-<td>108.3 M</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/seal_text_detection/PP-OCRv4_server_seal_det.yaml">PP-OCRv4_server_seal_det.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-OCRv4_server_seal_det_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/PP-OCRv4_server_seal_det_pretrained.pdparams">训练模型</a></td></tr>
-</tbody>
-</table>
-<p><b>注：以上精度指标的评估集是 PaddleOCR 自建的印章数据集，包含500印章图像。</b></p>
-<h2 id="_3"><a href="module_usage/text_recognition.html">文本识别模块</a><a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<ul>
-<li><b>中文识别模型</b></li>
-</ul>
-<table>
-<tr>
-<th>模型</th>
-<th>识别 Avg Accuracy(%)</th>
-<th>GPU推理耗时（ms）<br/>[常规模式 / 高性能模式]</th>
-<th>CPU推理耗时（ms）<br/>[常规模式 / 高性能模式]</th>
-<th>模型存储大小（M）</th>
-<th>yaml 文件</th>
-<th>模型下载链接</th>
-</tr>
-<tr>
-<td>PP-OCRv5_server_rec</td>
-<td>86.38</td>
-<td>8.45/2.36</td>
-<td>122.69/122.69</td>
-<td>81 M</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/text_recognition/PP-OCRv5_server_rec.yaml">PP-OCRv5_server_rec.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-OCRv5_server_rec_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/PP-OCRv5_server_rec_pretrained.pdparams">训练模型</a></td>
-</tr>
-<tr>
-<td>PP-OCRv5_mobile_rec</td>
-<td>81.29</td>
-<td>1.46/5.43</td>
-<td>5.32/91.79</td>
-<td>16 M</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/text_recognition/PP-OCRv5_mobile_rec.yaml">PP-OCRv5_mobile_rec.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-OCRv5_mobile_rec_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/PP-OCRv5_mobile_rec_pretrained.pdparams">训练模型</a></td>
-</tr>
-<tr>
-<td>PP-OCRv4_server_rec_doc</td>
-<td>81.53</td>
-<td>6.65 / 2.38</td>
-<td>32.92 / 32.92</td>
-<td>74.7 M</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/text_recognition/PP-OCRv4_server_rec_doc.yaml">PP-OCRv4_server_rec_doc.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/\
-PP-OCRv4_server_rec_doc_infer.tar">推理模型</a>/<a href="">训练模型</a></td>
-</tr>
-<tr>
-<td>PP-OCRv4_mobile_rec</td>
-<td>78.74</td>
-<td>4.82 / 1.20</td>
-<td>16.74 / 4.64</td>
-<td>10.6 M</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/text_recognition/PP-OCRv4_mobile_rec.yaml">PP-OCRv4_mobile_rec.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-OCRv4_mobile_rec_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/PP-OCRv4_mobile_rec_pretrained.pdparams">训练模型</a></td>
-</tr>
-<tr>
-<td>PP-OCRv4_server_rec </td>
-<td>80.61 </td>
-<td>6.58 / 2.43</td>
-<td>33.17 / 33.17</td>
-<td>71.2 M</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/text_recognition/PP-OCRv4_server_rec.yaml">PP-OCRv4_server_rec.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-OCRv4_server_rec_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/PP-OCRv4_server_rec_pretrained.pdparams">训练模型</a></td>
-</tr>
-<tr>
-<td>PP-OCRv3_mobile_rec</td>
-<td>72.96</td>
-<td>5.87 / 1.19</td>
-<td>9.07 / 4.28</td>
-<td>9.2 M</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/text_recognition/PP-OCRv3_mobile_rec.yaml">PP-OCRv3_mobile_rec.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/\
-PP-OCRv3_mobile_rec_infer.tar">推理模型</a>/<a href="">训练模型</a></td>
-</tr>
-</table>
-<p><b>注：以上精度指标的评估集是 PaddleOCR 自建的中文数据集，覆盖街景、网图、文档、手写多个场景，其中文本识别包含 8367 张图片。</b></p>
-<table>
-<tr>
-<th>模型</th>
-<th>识别 Avg Accuracy(%)</th>
-<th>GPU推理耗时（ms）<br/>[常规模式 / 高性能模式]</th>
-<th>CPU推理耗时（ms）<br/>[常规模式 / 高性能模式]</th>
-<th>模型存储大小（M）</th>
-<th>yaml 文件</th>
-<th>模型下载链接</th>
-</tr>
-<tr>
-<td>ch_SVTRv2_rec</td>
-<td>68.81</td>
-<td>8.08 / 2.74</td>
-<td>50.17 / 42.50</td>
-<td>73.9 M</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/text_recognition/ch_SVTRv2_rec.yaml">ch_SVTRv2_rec.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/ch_SVTRv2_rec_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/ch_SVTRv2_rec_pretrained.pdparams">训练模型</a></td>
-</tr>
-</table>
-<p><b>注：以上精度指标的评估集是 <a href="https://aistudio.baidu.com/competition/detail/1131/0/introduction">PaddleOCR算法模型挑战赛 - 赛题一：OCR端到端识别任务</a>A榜。 </b></p>
-<table>
-<tr>
-<th>模型</th>
-<th>识别 Avg Accuracy(%)</th>
-<th>GPU推理耗时（ms）<br/>[常规模式 / 高性能模式]</th>
-<th>CPU推理耗时（ms）<br/>[常规模式 / 高性能模式]</th>
-<th>模型存储大小（M）</th>
-<th>yaml 文件</th>
-<th>模型下载链接</th>
-</tr>
-<tr>
-<td>ch_RepSVTR_rec</td>
-<td>65.07</td>
-<td>5.93 / 1.62</td>
-<td>20.73 / 7.32</td>
-<td>22.1 M</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/text_recognition/ch_RepSVTR_rec.yaml">ch_RepSVTR_rec.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/ch_RepSVTR_rec_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/ch_RepSVTR_rec_pretrained.pdparams">训练模型</a></td>
-</tr>
-</table>
-<p><b>注：以上精度指标的评估集是 <a href="https://aistudio.baidu.com/competition/detail/1131/0/introduction">PaddleOCR算法模型挑战赛 - 赛题一：OCR端到端识别任务</a>B榜。 </b></p>
-
-<ul>
-<li><b>英文识别模型</b></li>
-</ul>
-<table>
-<tr>
-<th>模型</th>
-<th>识别 Avg Accuracy(%)</th>
-<th>GPU推理耗时（ms）<br/>[常规模式 / 高性能模式]</th>
-<th>CPU推理耗时（ms）<br/>[常规模式 / 高性能模式]</th>
-<th>模型存储大小（M）</th>
-<th>yaml 文件</th>
-<th>模型下载链接</th>
-</tr>
-<tr>
-<td>en_PP-OCRv4_mobile_rec</td>
-<td> 70.39</td>
-<td>4.81 / 0.75</td>
-<td>16.10 / 5.31</td>
-<td>6.8 M</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/text_recognition/en_PP-OCRv4_mobile_rec.yaml">en_PP-OCRv4_mobile_rec.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/\
-en_PP-OCRv4_mobile_rec_infer.tar">推理模型</a>/<a href="">训练模型</a></td>
-</tr>
-<tr>
-<td>en_PP-OCRv3_mobile_rec</td>
-<td>70.69</td>
-<td>5.44 / 0.75</td>
-<td>8.65 / 5.57</td>
-<td>7.8 M </td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/text_recognition/en_PP-OCRv3_mobile_rec.yaml">en_PP-OCRv3_mobile_rec.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/\
-en_PP-OCRv3_mobile_rec_infer.tar">推理模型</a>/<a href="">训练模型</a></td>
-</tr>
-</table>
-
-<p><b>注：以上精度指标的评估集是 PaddleOCR 自建的英文数据集。 </b></p>
-
-<ul>
-<li><b>多语言识别模型</b></li>
-</ul>
-<table>
-<tr>
-<th>模型</th>
-<th>识别 Avg Accuracy(%)</th>
-<th>GPU推理耗时（ms）<br/>[常规模式 / 高性能模式]</th>
-<th>CPU推理耗时（ms）<br/>[常规模式 / 高性能模式]</th>
-<th>模型存储大小（M）</th>
-<th>yaml 文件</th>
-<th>模型下载链接</th>
-</tr>
-<tr>
-<td>korean_PP-OCRv3_mobile_rec</td>
-<td>60.21</td>
-<td>5.40 / 0.97</td>
-<td>9.11 / 4.05</td>
-<td>8.6 M</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/text_recognition/korean_PP-OCRv3_mobile_rec.yaml">korean_PP-OCRv3_mobile_rec.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/\
-korean_PP-OCRv3_mobile_rec_infer.tar">推理模型</a>/<a href="">训练模型</a></td>
-</tr>
-<tr>
-<td>japan_PP-OCRv3_mobile_rec</td>
-<td>45.69</td>
-<td>5.70 / 1.02</td>
-<td>8.48 / 4.07</td>
-<td>8.8 M </td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/text_recognition/japan_PP-OCRv3_mobile_rec.yaml">japan_PP-OCRv3_mobile_rec.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/\
-japan_PP-OCRv3_mobile_rec_infer.tar">推理模型</a>/<a href="">训练模型</a></td>
-</tr>
-<tr>
-<td>chinese_cht_PP-OCRv3_mobile_rec</td>
-<td>82.06</td>
-<td>5.90 / 1.28</td>
-<td>9.28 / 4.34</td>
-<td>9.7 M </td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/text_recognition/chinese_cht_PP-OCRv3_mobile_rec.yaml">chinese_cht_PP-OCRv3_mobile_rec.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/\
-chinese_cht_PP-OCRv3_mobile_rec_infer.tar">推理模型</a>/<a href="">训练模型</a></td>
-</tr>
-<tr>
-<td>te_PP-OCRv3_mobile_rec</td>
-<td>95.88</td>
-<td>5.42 / 0.82</td>
-<td>8.10 / 6.91</td>
-<td>7.8 M </td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/text_recognition/te_PP-OCRv3_mobile_rec.yaml">te_PP-OCRv3_mobile_rec.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/\
-te_PP-OCRv3_mobile_rec_infer.tar">推理模型</a>/<a href="">训练模型</a></td>
-</tr>
-<tr>
-<td>ka_PP-OCRv3_mobile_rec</td>
-<td>96.96</td>
-<td>5.25 / 0.79</td>
-<td>9.09 / 3.86</td>
-<td>8.0 M </td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/text_recognition/ka_PP-OCRv3_mobile_rec.yaml">ka_PP-OCRv3_mobile_rec.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/\
-ka_PP-OCRv3_mobile_rec_infer.tar">推理模型</a>/<a href="">训练模型</a></td>
-</tr>
-<tr>
-<td>ta_PP-OCRv3_mobile_rec</td>
-<td>76.83</td>
-<td>5.23 / 0.75</td>
-<td>10.13 / 4.30</td>
-<td>8.0 M </td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/text_recognition/ta_PP-OCRv3_mobile_rec.yaml">ta_PP-OCRv3_mobile_rec.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/\
-ta_PP-OCRv3_mobile_rec_infer.tar">推理模型</a>/<a href="">训练模型</a></td>
-</tr>
-<tr>
-<td>latin_PP-OCRv3_mobile_rec</td>
-<td>76.93</td>
-<td>5.20 / 0.79</td>
-<td>8.83 / 7.15</td>
-<td>7.8 M</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/text_recognition/latin_PP-OCRv3_mobile_rec.yaml">latin_PP-OCRv3_mobile_rec.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/\
-latin_PP-OCRv3_mobile_rec_infer.tar">推理模型</a>/<a href="">训练模型</a></td>
-</tr>
-<tr>
-<td>arabic_PP-OCRv3_mobile_rec</td>
-<td>73.55</td>
-<td>5.35 / 0.79</td>
-<td>8.80 / 4.56</td>
-<td>7.8 M</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/text_recognition/arabic_PP-OCRv3_mobile_rec.yaml">arabic_PP-OCRv3_mobile_rec.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/\
-arabic_PP-OCRv3_mobile_rec_infer.tar">推理模型</a>/<a href="">训练模型</a></td>
-</tr>
-<tr>
-<td>cyrillic_PP-OCRv3_mobile_rec</td>
-<td>94.28</td>
-<td>5.23 / 0.76</td>
-<td>8.89 / 3.88</td>
-<td>7.9 M  </td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/text_recognition/cyrillic_PP-OCRv3_mobile_rec.yaml">cyrillic_PP-OCRv3_mobile_rec.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/\
-cyrillic_PP-OCRv3_mobile_rec_infer.tar">推理模型</a>/<a href="">训练模型</a></td>
-</tr>
-<tr>
-<td>devanagari_PP-OCRv3_mobile_rec</td>
-<td>96.44</td>
-<td>5.22 / 0.79</td>
-<td>8.56 / 4.06</td>
-<td>7.9 M</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/text_recognition/devanagari_PP-OCRv3_mobile_rec.yaml">devanagari_PP-OCRv3_mobile_rec.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/\
-devanagari_PP-OCRv3_mobile_rec_infer.tar">推理模型</a>/<a href="">训练模型</a></td>
-</tr>
-</table>
-<p><b>注：以上精度指标的评估集是 PaddleOCR 自建的多语种数据集。</b></p>
-
-<h2 id="_4"><a href="module_usage/formula_recognition.html">公式识别模块</a><a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<table>
-<tr>
-<th>模型</th>
-<th>En-BLEU(%)</th>
-<th>Zh-BLEU(%)</th>
-<th>GPU推理耗时（ms）<br/>[常规模式 / 高性能模式]</th>
-<th>CPU推理耗时（ms）<br/>[常规模式 / 高性能模式]</th>
-<th>模型存储大小 (M)</th>
-<th>yaml 文件</th>
-<th>模型下载链接</th>
-</tr>
-<td>UniMERNet</td>
-<td>85.91</td>
-<td>43.50</td>
-<td>2266.96/-</td>
-<td>-/-</td>
-<td>1.53 G</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/formula_recognition/UniMERNet.yaml">UniMERNet.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/UniMERNet_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/UniMERNet_pretrained.pdparams">训练模型</a></td>
-<tr>
-<td>PP-FormulaNet-S</td>
-<td>87.00</td>
-<td>45.71</td>
-<td>202.25/-</td>
-<td>-/-</td>
-<td>224 M</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/formula_recognition/PP-FormulaNet-S.yaml">PP-FormulaNet-S.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-FormulaNet-S_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/PP-FormulaNet-S_pretrained.pdparams">训练模型</a></td>
-</tr>
-<td>PP-FormulaNet-L</td>
-<td>90.36</td>
-<td>45.78</td>
-<td>1976.52/-</td>
-<td>-/-</td>
-<td>695 M</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/formula_recognition/PP-FormulaNet-L.yaml">PP-FormulaNet-L.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-FormulaNet-L_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/PP-FormulaNet-L_pretrained.pdparams">训练模型</a></td>
-<tr>
-<td>PP-FormulaNet_plus-S</td>
-<td>88.71</td>
-<td>53.32</td>
-<td>191.69/-</td>
-<td>-/-</td>
-<td>248 M</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/formula_recognition/PP-FormulaNet_plus-S.yaml">PP-FormulaNet_plus-S.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-FormulaNet_plus-S_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/PP-FormulaNet_plus-S_pretrained.pdparams">训练模型</a></td>
-</tr>
-<tr>
-<td>PP-FormulaNet_plus-M</td>
-<td>91.45</td>
-<td>89.76</td>
-<td>1301.56/-</td>
-<td>-/-</td>
-<td>592 M</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/formula_recognition/PP-FormulaNet_plus-M.yaml">PP-FormulaNet_plus-M.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-FormulaNet_plus-M_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/PP-FormulaNet_plus-M_pretrained.pdparams">训练模型</a></td>
-</tr>
-<tr>
-<td>PP-FormulaNet_plus-L</td>
-<td>92.22</td>
-<td>90.64</td>
-<td>1745.25/-</td>
-<td>-/-</td>
-<td>698 M</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/formula_recognition/PP-FormulaNet_plus-L.yaml">PP-FormulaNet_plus-L.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-FormulaNet_plus-L_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/PP-FormulaNet_plus-L_pretrained.pdparams">训练模型</a></td>
-</tr>
-<tr>
-<td>LaTeX_OCR_rec</td>
-<td>74.55</td>
-<td>39.96</td>
-<td>1244.61/-</td>
-<td>-/-</td>
-<td>99 M</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/formula_recognition/LaTeX_OCR_rec.yaml">LaTeX_OCR_rec.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/LaTeX_OCR_rec_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/LaTeX_OCR_rec_pretrained.pdparams">训练模型</a></td>
-</tr>
-</table>
-<p><b>注：以上精度指标测量自 PaddleX 内部自建公式识别测试集。LaTeX_OCR_rec在LaTeX-OCR公式识别测试集的BLEU score为 0.8821。</b></p>
-<h2 id="_5"><a href="module_usage/table_structure_recognition.html">表格结构识别模块</a><a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<table>
-<tr>
-<th>模型</th>
-<th>精度（%）</th>
-<th>GPU推理耗时（ms）<br/>[常规模式 / 高性能模式]</th>
-<th>CPU推理耗时（ms）<br/>[常规模式 / 高性能模式]</th>
-<th>模型存储大小 (M)</th>
-<th>yaml 文件</th>
-<th>模型下载链接</th>
-</tr>
-<tr>
-<td>SLANet</td>
-<td>59.52</td>
-<td>103.08 / 103.08</td>
-<td>197.99 / 197.99</td>
-<td>6.9 M</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/table_structure_recognition/SLANet.yaml">SLANet.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/SLANet_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/SLANet_pretrained.pdparams">训练模型</a></td>
-</tr>
-<tr>
-<td>SLANet_plus</td>
-<td>63.69</td>
-<td>140.29 / 140.29</td>
-<td>195.39 / 195.39</td>
-<td>6.9 M</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/table_structure_recognition/SLANet_plus.yaml">SLANet_plus.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/SLANet_plus_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/SLANet_plus_pretrained.pdparams">训练模型</a></td>
-</tr>
-<tr>
-<td>SLANeXt_wired</td>
-<td rowspan="2">69.65</td>
-<td rowspan="2">--</td>
-<td rowspan="2">--</td>
-<td rowspan="2">--</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/table_structure_recognition/SLANeXt_wired.yaml">SLANeXt_wired.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/SLANeXt_wired_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/SLANeXt_wired_pretrained.pdparams">训练模型</a></td>
-</tr>
-<tr>
-<td>SLANeXt_wireless</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/table_structure_recognition/SLANeXt_wireless.yaml">SLANeXt_wireless.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/SLANeXt_wireless_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/SLANeXt_wireless_pretrained.pdparams">训练模型</a></td>
-</tr>
-</table>
-<p><b>注：以上精度指标测量自 PaddleX 内部自建高难度中文表格识别数据集。</b></p>
-<h2 id="_6"><a href="module_usage/table_cells_detection.html">表格单元格检测模块</a><a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
-<table>
-<tr>
-<th>模型</th>
-<th>mAP(%)</th>
-<th>GPU推理耗时（ms）<br/>[常规模式 / 高性能模式]</th>
-<th>CPU推理耗时（ms）<br/>[常规模式 / 高性能模式]</th>
-<th>模型存储大小 (M)</th>
-<th>yaml 文件</th>
-<th>模型下载链接</th>
-</tr>
-<tr>
-<td>RT-DETR-L_wired_table_cell_det</td>
-
-<td rowspan="2">82.7</td>
-<td rowspan="2">35.00 / 10.45</td>
-<td rowspan="2">495.51 / 495.51</td>
-<td rowspan="2">124M</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/table_cells_detection/RT-DETR-L_wired_table_cell_det.yaml">RT-DETR-L_wired_table_cell_det.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/RT-DETR-L_wired_table_cell_det_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/RT-DETR-L_wired_table_cell_det_pretrained.pdparams">训练模型</a></td>
-</tr>
-<tr>
-<td>RT-DETR-L_wireless_table_cell_det</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/table_cells_detection/RT-DETR-L_wireless_table_cell_det.yaml">RT-DETR-L_wireless_table_cell_det.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/RT-DETR-L_wireless_table_cell_det_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/RT-DETR-L_wireless_table_cell_det_pretrained.pdparams">训练模型</a></td>
-</tr>
-</table>
-<p><b>注：以上精度指标测量自 PaddleX 内部自建表格单元格检测数据集。</b></p>
-
-<h2 id="_7"><a href="module_usage/table_classification.html">表格分类模块</a><a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
-<table>
-<tr>
-<th>模型</th>
-<th>Top1 Acc(%)</th>
-<th>GPU推理耗时（ms）<br/>[常规模式 / 高性能模式]</th>
-<th>CPU推理耗时（ms）<br/>[常规模式 / 高性能模式]</th>
-<th>模型存储大小 (M)</th>
-<th>yaml文件</th>
-<th>模型下载链接</th>
-</tr>
-<tr>
-<td>PP-LCNet_x1_0_table_cls</td>
-<td>94.2</td>
-<td>2.35 / 0.47</td>
-<td>4.03 / 1.35</td>
-<td>6.6M</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/table_classification/PP-LCNet_x1_0_table_cls.yaml">PP-LCNet_x1_0_table_cls.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-LCNet_x1_0_table_cls_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/PP-LCNet_x1_0_table_cls_pretrained.pdparams">训练模型</a></td>
-</tr>
-</table>
-<p><b>注：以上精度指标测量自 PaddleX 内部自建表格分类数据集。</b></p>
-
-<h2 id="_8"><a href="module_usage/text_image_unwarping.html">文本图像矫正模块</a><a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>模型名称</th>
-<th>MS-SSIM （%）</th>
-<th>GPU推理耗时（ms）<br/>[常规模式 / 高性能模式]</th>
-<th>CPU推理耗时（ms）<br/>[常规模式 / 高性能模式]</th>
-<th>模型存储大小</th>
-<th>yaml 文件</th>
-<th>模型下载链接</th></tr>
-</thead>
-<tbody>
-<tr>
-<td>UVDoc</td>
-<td>54.40</td>
-<td>16.27 / 7.76</td>
-<td>176.97 / 80.60</td>
-<td>30.3 M</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/image_unwarping/UVDoc.yaml">UVDoc.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/UVDoc_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/UVDoc_pretrained.pdparams">训练模型</a></td></tr>
-</tbody>
-</table>
-<p><b>注：以上精度指标测量自 </b><b>PaddleX自建的图像矫正数据集</b><b>。</b></p>
-<h2 id="_9"><a href="module_usage/layout_detection.html">版面区域检测模块</a><a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
-<ul>
-<li><b>版面检测模型，包含20个常见的类别：文档标题、段落标题、文本、页码、摘要、目录、参考文献、脚注、页眉、页脚、算法、公式、公式编号、图像、表格、图和表标题（图标题、表格标题和图表标题）、印章、图表、侧栏文本和参考文献内容</b></li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>模型</th>
-<th>mAP(0.5)（%）</th>
-<th>GPU推理耗时（ms）<br/>[常规模式 / 高性能模式]</th>
-<th>CPU推理耗时（ms）<br/>[常规模式 / 高性能模式]</th>
-<th>模型存储大小（M）</th>
-<th>yaml文件</th>
-<th>模型下载链接</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>PP-DocLayout_plus-L</td>
-<td>83.2</td>
-<td>34.6244 / 10.3945</td>
-<td>510.57 / - </td>
-<td>126.01 </td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/layout_detection/PP-DocLayout_plus-L.yaml">PP-DocLayout_plus-L.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-DocLayout_plus-L_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/PP-DocLayout_plus-L_pretrained.pdparams">训练模型</a></td>
-</tr>
-</tbody>
-</table>
-
-<p><b>注：以上精度指标的评估集是自建的版面区域检测数据集，包含中英文论文、杂志、报纸、研报、PPT、试卷、课本等 1300 张文档类型图片。</b></p>
-<ul>
-<li><b>文档图像版面子模块检测，包含1个 版面区域 类别，能检测多栏的报纸、杂志的每个子文章的文本区域:</b></li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>模型</th>
-<th>mAP(0.5)（%）</th>
-<th>GPU推理耗时（ms）<br/>[常规模式 / 高性能模式]</th>
-<th>CPU推理耗时（ms）<br/>[常规模式 / 高性能模式]</th>
-<th>模型存储大小（M）</th>
-<th>yaml文件</th>
-<th>模型下载链接</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>PP-DocBlockLayout</td>
-<td>95.9</td>
-<td>34.6244 / 10.3945</td>
-<td>510.57 / - </td>
-<td>123 M</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/layout_detection/PP-DocBlockLayout.yaml">PP-DocBlockLayout.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-DocBlockLayout_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/PP-DocBlockLayout_pretrained.pdparams">训练模型</a></td>
-</tr>
-</tbody>
-</table>
-
-<p><b>注：以上精度指标的评估集是自建的版面子区域检测数据集，包含中英文论文、杂志、报纸、研报、PPT、试卷、课本等 1000 张文档类型图片。</b></p>
-<ul>
-<li><b>版面检测模型，包含23个常见的类别：文档标题、段落标题、文本、页码、摘要、目录、参考文献、脚注、页眉、页脚、算法、公式、公式编号、图像、图表标题、表格、表格标题、印章、图表标题、图表、页眉图像、页脚图像、侧栏文本</b></li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>模型</th>
-<th>mAP(0.5)（%）</th>
-<th>GPU推理耗时（ms）<br/>[常规模式 / 高性能模式]</th>
-<th>CPU推理耗时（ms）<br/>[常规模式 / 高性能模式]</th>
-<th>模型存储大小（M）</th>
-<th>yaml文件</th>
-<th>模型下载链接</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>PP-DocLayout-L</td>
-<td>90.4</td>
-<td>34.6244 / 10.3945</td>
-<td>510.57 / - </td>
-<td>123.76 </td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/layout_detection/PP-DocLayout-L.yaml">PP-DocLayout-L.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-DocLayout-L_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/PP-DocLayout-L_pretrained.pdparams">训练模型</a></td>
-</tr>
-<tr>
-<td>PP-DocLayout-M</td>
-<td>75.2</td>
-<td>13.3259 / 4.8685</td>
-<td>44.0680 / 44.0680</td>
-<td>22.578</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/layout_detection/PP-DocLayout-M.yaml">PP-DocLayout-M.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-DocLayout-M_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/PP-DocLayout-M_pretrained.pdparams">训练模型</a></td>
-</tr>
-<tr>
-<td>PP-DocLayout-S</td>
-<td>70.9</td>
-<td>8.3008 / 2.3794</td>
-<td>10.0623 / 9.9296</td>
-<td>4.834</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/layout_detection/PP-DocLayout-S.yaml">PP-DocLayout-S.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-DocLayout-S_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/PP-DocLayout-S_pretrained.pdparams">训练模型</a></td>
-</tr>
-</tbody>
-</table>
-
-<p><b>注：以上精度指标的评估集是自建的版面区域检测数据集，包含中英文论文、杂志和研报等常见的 500 张文档类型图片。</b></p>
-<ul>
-<li><b>表格版面检测模型</b></li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>模型</th>
-<th>mAP(0.5)（%）</th>
-<th>GPU推理耗时（ms）<br/>[常规模式 / 高性能模式]</th>
-<th>CPU推理耗时（ms）<br/>[常规模式 / 高性能模式]</th>
-<th>模型存储大小（M）</th>
-<th>yaml文件</th>
-<th>模型下载链接</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>PicoDet_layout_1x_table</td>
-<td>97.5</td>
-<td>8.02 / 3.09</td>
-<td>23.70 / 20.41</td>
-<td>7.4 M</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/layout_detection/PicoDet_layout_1x_table.yaml">PicoDet_layout_1x_table.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PicoDet_layout_1x_table_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/PicoDet_layout_1x_table_pretrained.pdparams">训练模型</a></td>
-</tr>
-</tbody></table>
-<p><b>注：以上精度指标的评估集是 PaddleOCR 自建的版面表格区域检测数据集，包含中英文 7835 张带有表格的论文文档类型图片。</b></p>
-<ul>
-<li><b>3类版面检测模型，包含表格、图像、印章</b></li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>模型</th>
-<th>mAP(0.5)（%）</th>
-<th>GPU推理耗时（ms）<br/>[常规模式 / 高性能模式]</th>
-<th>CPU推理耗时（ms）<br/>[常规模式 / 高性能模式]</th>
-<th>模型存储大小（M）</th>
-<th>yaml文件</th>
-<th>模型下载链接</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>PicoDet-S_layout_3cls</td>
-<td>88.2</td>
-<td>8.99 / 2.22</td>
-<td>16.11 / 8.73</td>
-<td>4.8</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/layout_detection/PicoDet-S_layout_3cls.yaml">PicoDet-S_layout_3cls.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PicoDet-S_layout_3cls_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/PicoDet-S_layout_3cls_pretrained.pdparams">训练模型</a></td>
-</tr>
-<tr>
-<td>PicoDet-L_layout_3cls</td>
-<td>89.0</td>
-<td>13.05 / 4.50</td>
-<td>41.30 / 41.30</td>
-<td>22.6</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/layout_detection/PicoDet-L_layout_3cls.yaml">PicoDet-L_layout_3cls.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PicoDet-L_layout_3cls_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/PicoDet-L_layout_3cls_pretrained.pdparams">训练模型</a></td>
-</tr>
-<tr>
-<td>RT-DETR-H_layout_3cls</td>
-<td>95.8</td>
-<td>114.93 / 27.71</td>
-<td>947.56 / 947.56</td>
-<td>470.1</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/layout_detection/RT-DETR-H_layout_3cls.yaml">RT-DETR-H_layout_3cls.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/RT-DETR-H_layout_3cls_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/RT-DETR-H_layout_3cls_pretrained.pdparams">训练模型</a></td>
-</tr>
-</tbody></table>
-<p><b>注：以上精度指标的评估集是 PaddleOCR 自建的版面区域检测数据集，包含中英文论文、杂志和研报等常见的 1154 张文档类型图片。</b></p>
-<ul>
-<li><b>5类英文文档区域检测模型，包含文字、标题、表格、图片以及列表</b></li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>模型</th>
-<th>mAP(0.5)（%）</th>
-<th>GPU推理耗时（ms）<br/>[常规模式 / 高性能模式]</th>
-<th>CPU推理耗时（ms）<br/>[常规模式 / 高性能模式]</th>
-<th>模型存储大小（M）</th>
-<th>yaml文件</th>
-<th>模型下载链接</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>PicoDet_layout_1x</td>
-<td>97.8</td>
-<td>9.03 / 3.10</td>
-<td>25.82 / 20.70</td>
-<td>7.4</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/layout_detection/PicoDet_layout_1x.yaml">PicoDet_layout_1x.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PicoDet_layout_1x_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/PicoDet_layout_1x_pretrained.pdparams">训练模型</a></td>
-</tr>
-</tbody></table>
-<p><b>注：以上精度指标的评估集是 <a href="https://developer.ibm.com/exchanges/data/all/publaynet/">PubLayNet</a> 的评估数据集，包含英文文档的 11245 张图片。</b></p>
-<ul>
-<li><b>17类区域检测模型，包含17个版面常见类别，分别是：段落标题、图片、文本、数字、摘要、内容、图表标题、公式、表格、表格标题、参考文献、文档标题、脚注、页眉、算法、页脚、印章</b></li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>模型</th>
-<th>mAP(0.5)（%）</th>
-<th>GPU推理耗时（ms）<br/>[常规模式 / 高性能模式]</th>
-<th>CPU推理耗时（ms）<br/>[常规模式 / 高性能模式]</th>
-<th>模型存储大小（M）</th>
-<th>yaml文件</th>
-<th>模型下载链接</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>PicoDet-S_layout_17cls</td>
-<td>87.4</td>
-<td>9.11 / 2.12</td>
-<td>15.42 / 9.12</td>
-<td>4.8</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/layout_detection/PicoDet-S_layout_17cls.yaml">PicoDet-S_layout_17cls.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PicoDet-S_layout_17cls_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/PicoDet-S_layout_17cls_pretrained.pdparams">训练模型</a></td>
-</tr>
-<tr>
-<td>PicoDet-L_layout_17cls</td>
-<td>89.0</td>
-<td>13.50 / 4.69</td>
-<td>43.32 / 43.32</td>
-<td>22.6</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/layout_detection/PicoDet-L_layout_17cls.yaml">PicoDet-L_layout_17cls.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PicoDet-L_layout_17cls_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/PicoDet-L_layout_17cls_pretrained.pdparams">训练模型</a></td>
-</tr>
-<tr>
-<td>RT-DETR-H_layout_17cls</td>
-<td>98.3</td>
-<td>115.29 / 104.09</td>
-<td>995.27 / 995.27</td>
-<td>470.2</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/layout_detection/RT-DETR-H_layout_17cls.yaml">RT-DETR-H_layout_17cls.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/RT-DETR-H_layout_17cls_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/RT-DETR-H_layout_17cls_pretrained.pdparams">训练模型</a></td>
-</tr>
-</tbody>
-</table>
-<p><b>注：以上精度指标的评估集是 PaddleOCR 自建的版面区域检测数据集，包含中英文论文、杂志和研报等常见的 892 张文档类型图片。</b></p>
-<h2 id="_10"><a href="module_usage/doc_img_orientation_classification.html">文档图像方向分类模块</a><a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>模型</th>
-<th>Top-1 Acc（%）</th>
-<th>GPU推理耗时（ms）<br/>[常规模式 / 高性能模式]</th>
-<th>CPU推理耗时（ms）<br/>[常规模式 / 高性能模式]</th>
-<th>模型存储大小（M)</th>
-<th>yaml文件</th>
-<th>模型下载链接</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>PP-LCNet_x1_0_doc_ori</td>
-<td>99.06</td>
-<td>2.31 / 0.43</td>
-<td>3.37 / 1.27</td>
-<td>7</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/doc_text_orientation/PP-LCNet_x1_0_doc_ori.yaml">PP-LCNet_x1_0_doc_ori.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-LCNet_x1_0_doc_ori_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/PP-LCNet_x1_0_doc_ori_pretrained.pdparams">训练模型</a></td>
-</tr>
-</tbody>
-</table>
-<p><b>注：以上精度指标的评估集是自建的数据集，覆盖证件和文档等多个场景，包含 1000 张图片。</b></p>
-<h2 id="_11"><a href="module_usage/doc_img_orientation_classification.html">文本行方向分类模块</a><a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>模型</th>
-<th>Top-1 Acc（%）</th>
-<th>GPU推理耗时（ms）<br>[常规模式 / 高性能模式]</th>
-<th>CPU推理耗时（ms）<br>[常规模式 / 高性能模式]</th>
-<th>模型存储大小（M)</th>
-<th>yaml文件</th>
-<th>模型下载链接</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>PP-LCNet_x1_0_doc_ori</td>
-<td>99.06</td>
-<td>2.31 / 0.43</td>
-<td>3.37 / 1.27</td>
-<td>7</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/textline_orientation/PP-LCNet_x0_25_textline_ori.yaml">PP-LCNet_x0_25_textline_ori.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-LCNet_x1_0_doc_ori_infer.tar">推理模型</a>/<a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_pretrained_model/PP-LCNet_x1_0_doc_ori_pretrained.pdparams">训练模型</a></td>
-</tr>
-</tbody>
-</table>
-
-<p><b>注：以上精度指标的评估集是自建的数据集，覆盖证件和文档等多个场景，包含 1000 张图片。</b></p>
-<h2 id="_12"><a href="module_usage/doc_vlm.html">文档类视觉语言模型模块</a><a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
-<table>
-<tr>
-<th>模型</th>
-<th>模型参数尺寸（B）</th>
-<th>模型存储大小（GB）</th>
-<th>yaml文件</th>
-<th>模型下载链接</th>
-</tr>
-<tr>
-<td>PP-DocBee-2B</td>
-<td>2</td>
-<td>4.2</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/doc_vlm/PP-DocBee-2B.yaml">PP-DocBee-2B.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-DocBee-2B_infer.tar">推理模型</a></td>
-</tr>
-<tr>
-<td>PP-DocBee-7B</td>
-<td>7</td>
-<td>15.8</td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/develop/paddlex/configs/modules/doc_vlm/PP-DocBee-7B.yaml">PP-DocBee-7B.yaml</a></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-DocBee-7B_infer.tar">推理模型</a></td>
-</tr>
-<tr>
-<td>PP-DocBee2-3B</td>
-<td>3</td>
-<td>7.6</td>
-<td></td>
-<td><a href="https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-DocBee2-3B_infer.tar">推理模型</a></td>
-</tr>
-</table>
+<h2 id="5">5. 配置示例<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<p>以下是针对不同工作模式的完整配置示例，您可以直接复制并根据需要修改：</p>
+<h3 id="51">5.1 星河社区服务配置<a class="headerlink" href="#51" title="Permanent link">&para;</a></h3>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">&quot;mcpServers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="nt">&quot;paddleocr-ocr&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">      </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;paddleocr_mcp&quot;</span><span class="p">,</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">      </span><span class="nt">&quot;args&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">      </span><span class="nt">&quot;env&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">        </span><span class="nt">&quot;PADDLEOCR_MCP_PIPELINE&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;OCR&quot;</span><span class="p">,</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">        </span><span class="nt">&quot;PADDLEOCR_MCP_PPOCR_SOURCE&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;aistudio&quot;</span><span class="p">,</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">        </span><span class="nt">&quot;PADDLEOCR_MCP_SERVER_URL&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;your-server-url&gt;&quot;</span><span class="p">,</span><span class="w"> </span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">        </span><span class="nt">&quot;PADDLEOCR_MCP_AISTUDIO_ACCESS_TOKEN&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;your-access-token&gt;&quot;</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="p">}</span>
+</span></code></pre></div>
+<p><strong>说明</strong>：
+- 将 <code>&lt;your-server-url&gt;</code> 替换为您的星河社区服务的 <strong>服务基础 URL</strong>，例如 <code>https://xxxxx.aistudio-hub.baidu.com</code>，注意不要带有端点路径（如 <code>/ocr</code>）。
+- 将 <code>&lt;your-access-token&gt;</code> 替换为您的 <strong>访问令牌</strong>。</p>
+<h3 id="52-python">5.2 本地 Python 库配置<a class="headerlink" href="#52-python" title="Permanent link">&para;</a></h3>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">{</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="nt">&quot;mcpServers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="nt">&quot;paddleocr-ocr&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">      </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;paddleocr_mcp&quot;</span><span class="p">,</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">      </span><span class="nt">&quot;args&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">      </span><span class="nt">&quot;env&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">        </span><span class="nt">&quot;PADDLEOCR_MCP_PIPELINE&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;OCR&quot;</span><span class="p">,</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">        </span><span class="nt">&quot;PADDLEOCR_MCP_PPOCR_SOURCE&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;local&quot;</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="p">}</span>
+</span></code></pre></div>
+<p><strong>说明</strong>：
+- <code>PADDLEOCR_MCP_PIPELINE_CONFIG</code> 为可选项，不设置时使用产线默认配置。如需调整配置，例如更换模型，请参考 <a href="../paddleocr_and_paddlex.html">PaddleOCR 文档</a> 导出产线配置文件，并将 <code>PADDLEOCR_MCP_PIPELINE_CONFIG</code> 设置为配置文件的绝对路径。</p>
+<h3 id="53">5.3 自托管服务配置<a class="headerlink" href="#53" title="Permanent link">&para;</a></h3>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="nt">&quot;mcpServers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="nt">&quot;paddleocr-ocr&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">      </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;paddleocr_mcp&quot;</span><span class="p">,</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">      </span><span class="nt">&quot;args&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">      </span><span class="nt">&quot;env&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">        </span><span class="nt">&quot;PADDLEOCR_MCP_PIPELINE&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;OCR&quot;</span><span class="p">,</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">        </span><span class="nt">&quot;PADDLEOCR_MCP_PPOCR_SOURCE&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;self_hosted&quot;</span><span class="p">,</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">        </span><span class="nt">&quot;PADDLEOCR_MCP_SERVER_URL&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;your-server-url&gt;&quot;</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="p">}</span>
+</span></code></pre></div>
+<p><strong>说明</strong>：
+- 将 <code>&lt;your-server-url&gt;</code> 替换为底层服务的基础 URL（如：<code>http://127.0.0.1:8000</code>）。</p>
 
 
 
@@ -4084,51 +3696,6 @@ devanagari_PP-OCRv3_mobile_rec_infer.tar">推理模型</a>/<a href="">训练模�
 
 
 
-<h2 id="__comments">评论</h2>
-<!-- Insert generated snippet here -->
-
-<script src="https://giscus.app/client.js" data-repo="PaddlePaddle/PaddleOCR"
-    data-repo-id="MDEwOlJlcG9zaXRvcnkyNjIyOTYxMjI=" data-category="Q&A" data-category-id="DIC_kwDOD6JSOs4COrbO"
-    data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top"
-    data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async>
-</script>
-
-<!-- Synchronize Giscus theme with palette -->
-<script>
-    var giscus = document.querySelector("script[src*=giscus]")
-
-    // Set palette on initial load
-    var palette = __md_get("__palette")
-    if (palette && typeof palette.color === "object") {
-        var theme = palette.color.scheme === "slate"
-            ? "transparent_dark"
-            : "light"
-
-        // Instruct Giscus to set theme
-        giscus.setAttribute("data-theme", theme)
-    }
-
-    // Register event handlers after documented loaded
-    document.addEventListener("DOMContentLoaded", function () {
-        var ref = document.querySelector("[data-md-component=palette]")
-        ref.addEventListener("change", function () {
-            var palette = __md_get("__palette")
-            if (palette && typeof palette.color === "object") {
-                var theme = palette.color.scheme === "slate"
-                    ? "transparent_dark"
-                    : "light"
-
-                // Instruct Giscus to change theme
-                var frame = document.querySelector(".giscus-frame")
-                frame.contentWindow.postMessage(
-                    { giscus: { setConfig: { theme } } },
-                    "https://giscus.app"
-                )
-            }
-        })
-    })
-</script>
-
                 
               </article>
             </div>
@@ -4149,6 +3716,44 @@ devanagari_PP-OCRv3_mobile_rec_infer.tar">推理模型</a>/<a href="">训练模�
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="python_and_cpp_infer.html" class="md-footer__link md-footer__link--prev" aria-label="上一页: 基于Python或C++预测引擎推理">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256l137.3-137.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                基于Python或C++预测引擎推理
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../module_usage/module_overview.html" class="md-footer__link md-footer__link--next" aria-label="下一页: 模块概述">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                模块概述
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -4205,12 +3810,12 @@ devanagari_PP-OCRv3_mobile_rec_infer.tar">推理模型</a>/<a href="">训练模�
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["announce.dismiss", "content.tooltips", "content.code.copy", "content.tabs.link", "content.footnote.tooltips", "content.action.edit", "content.action.view", "navigation.expand", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "navigation.footer", "navigation.indexes", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "content.tooltips", "content.code.copy", "content.tabs.link", "content.footnote.tooltips", "content.action.edit", "content.action.view", "navigation.expand", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "navigation.footer", "navigation.indexes", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
-        <script src="../javascripts/katex.min.js"></script>
+        <script src="../../javascripts/katex.min.js"></script>
       
         <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
       
